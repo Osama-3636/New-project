@@ -1,0 +1,11 @@
+<!--<?xml version="1.0" encoding="utf-8" ?>-->
+
+<odoo>
+    <data>
+        <record id="'course_1" model="newproject.instructor1">
+            <field name="name">Python2</field>
+            <field name="active">true</field>
+            <field name="description">Python advanced course</field>
+        </record>
+    </data>
+</odoo>

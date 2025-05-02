@@ -1,0 +1,86 @@
+<odoo>
+<data>
+    <record id="main_action_no4" model="ir.actions.act_window">
+        <field name="name">main</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">newproject.teacher</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_ids" eval="[(5,0,0),(0, 0,{'view_mode':'tree','view_id': ref('rrrr_view_tree_no4')})]"/>
+    </record>
+
+      <record id="instructors_view_form_no4" model="ir.ui.view">
+            <field name="name">instructor_view_form_no4</field>
+            <field name="model">newproject.teacher</field>
+            <field name="arch" type="xml">
+                <form string="course_form">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name" />
+                                <field name="gender"/>
+                            </group>
+                            <group>
+                                <field name="notes" readonly="1"/>
+                                <field name="expereience"/>
+                            </group>
+                        </group>
+                    </sheet>
+                     <sheet>
+                    <group>
+                        <group>
+                            <field name="name" readonly="1"/>
+                            <field name="description"/>
+
+                        </group>
+                        <group col="12">
+                            <field name="Course_id" nolabel="1" colspan="8"/>
+                                <field name="Course_id" colspan="12" string="many2many"/>
+
+                        </group>
+                        <group>
+                                                            <field name="Courses_ids"  string="One2many"/>
+
+                            <field name="active"/>
+                            <field name="price"/>
+                        </group>
+                        <group>
+                            <field name="date"/>
+                            <field name="text"/>
+                            <field name="start_time"/>
+                            <field name="icon"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="students" string="">
+                            <div>
+                                <h3>type your notes</h3>
+                            </div>
+                            <div>
+                                <h3>upload ur image</h3>
+                            </div>
+                            <field name="image" widget="image"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                </form>
+            </field>
+        </record>
+
+    <record id="rrrr_view_tree_no4" model="ir.ui.view" >
+        <field name="name">rrrr_view_tree_no4</field>
+        <field name="model">newproject.teacher</field>
+        <field name="arch" type="xml">
+            <tree string="rrrr_tree" default_order="date desc">
+                <field name="name"/>
+                <field name="price"/>
+<!--                <field name="Course_id"/>-->
+                <field name="date"/>
+<!--                <field name="Courses_ids"/>-->
+            </tree>
+        </field>
+    </record>
+
+    <menuitem id="courses_root_no4" name="instructor" parent='courses_root' action="main_action_no4" sequence="3"/>
+
+</data>
+</odoo>

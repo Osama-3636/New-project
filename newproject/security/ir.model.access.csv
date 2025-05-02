@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_newproject_newproject,newproject.newproject,model_newproject_instructor1,base.group_user,1,1,1,1
+access_newproject_teacher,newproject.teacher,model_newproject_teacher,base.group_user,1,1,1,1
+
+
+
