@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': "newproject",
-    'version': '17.1',
+    'version': '17.2',
     'summary': "Short (1 phrase/line) summary of the module's purpose",
 
     'description': """
