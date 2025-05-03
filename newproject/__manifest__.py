@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': "newproject",
-    'version': '17.2',
+    'version': '17.3',
     'summary': "Short (1 phrase/line) summary of the module's purpose",
 
     'description': """
@@ -16,7 +16,7 @@ Long description of module's purpose
     # for the full list
     'category': 'Uncategorized',
 
-    # any module necessary for this one to work correctly
+    # any module necessary for this one to work correctlyhttps://github.com/Osama-3636/New-project.git
     'depends': ['base'],
 
     # always loaded
